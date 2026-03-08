@@ -47,6 +47,7 @@ export default function SurveyForm() {
 
     // Envoi si tout est rempli
     await axios.post("https://survey-v4py.onrender.com/submit", form);
+    setSubmitted(true);
     alert("Response submitted!");
     setForm({});
 
